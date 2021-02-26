@@ -4,6 +4,7 @@ buildscript {
     
     repositories {
         google()
+        mavenCentral()
         jcenter()
     }
     dependencies {
@@ -18,11 +19,12 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven {
             url "https://maven.google.com"
         }
         maven { url "https://jitpack.io" }
+        jcenter()
     }
 
     // Workaround for https://issuetracker.google.com/117900475
