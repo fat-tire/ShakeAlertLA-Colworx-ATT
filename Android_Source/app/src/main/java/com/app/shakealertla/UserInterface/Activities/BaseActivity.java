@@ -41,6 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Navigati
 //        Window window = this.getWindow();
 //        Drawable background = this.getResources().getDrawable(R.drawable.main_gradient_background);
 //        window.setBackgroundDrawable(background);
+        /*
         receiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -71,6 +72,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Navigati
                 AppLog.d("BaseActivity", "AWSMobileClient is instantiated and you are connected to AWS!");
             }
         }).execute();
+         */
     }
 
     @Override

@@ -201,7 +201,7 @@ public class RecentEarthquakesActivity extends BaseActivity {
 
                         @Override
                         public void error(VolleyError error) {
-                            if (error.getMessage() != null) {
+                            if (error != null && error.getMessage() != null && error.networkResponse != null) {
                                 if (error.networkResponse.statusCode == -1)
                                     listener.error("Please check your internet connection.");
                                 else {
@@ -210,7 +210,7 @@ public class RecentEarthquakesActivity extends BaseActivity {
                                 }
                             } else {
                                 String res = "";
-                                if (error.networkResponse != null && error.networkResponse.data != null) {
+                                if (error != null && error.networkResponse != null && error.networkResponse.data != null) {
                                     res = new String(error.networkResponse.data);
                                     listener.error(res);
                                 }

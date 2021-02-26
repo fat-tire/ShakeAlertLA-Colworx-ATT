@@ -96,11 +96,11 @@ public class HomeActivity extends BaseActivity {
                 (HomeActivity.this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             if (checkLocationPermission()) {
-                initAWS();
+           //     initAWS();
                 setupComponents();
             }
         } else {
-            initAWS();
+          //  initAWS();
             setupComponents();
         }
     }
