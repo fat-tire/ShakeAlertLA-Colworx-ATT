@@ -88,7 +88,7 @@
             <!--android:textSize="15sp"-->
             <!--android:drawablePadding="10dp"/>-->
     <!--</LinearLayout>-->
-    <android.support.v4.widget.SwipeRefreshLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/pullToRefresh"
         android:layout_width="match_parent"
         android:layout_below="@+id/info"
@@ -103,7 +103,7 @@
             android:padding="15dp"
             tools:listitem="@layout/recent_earthquakes_list_item"/>
 
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.github.clans.fab.FloatingActionMenu
         android:visibility="gone"

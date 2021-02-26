@@ -2,27 +2,20 @@ package com.app.shakealertla.UserInterface.Activities;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.android.volley.error.VolleyError;
 import com.app.shakealertla.Adapters.HomeTabstPagerAdapter;
-import com.app.shakealertla.HttpUtils.RestAPI;
 import com.app.shakealertla.Listener.ServiceListener;
 import com.app.shakealertla.Models.Shelters;
 import com.app.shakealertla.R;
 import com.app.shakealertla.Services.ShelterService;
 import com.app.shakealertla.UserInterface.Fragments.FindAshelter_ListFragment;
 import com.app.shakealertla.UserInterface.Fragments.FindAshelter_MapFragment;
-import com.app.shakealertla.Utils.AppLog;
-import com.app.shakealertla.Utils.AppUtils;
-import com.app.shakealertla.Utils.GsonUtils;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 

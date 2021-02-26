@@ -1,9 +1,7 @@
 package com.app.shakealertla.UserInterface.Fragments;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +9,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.app.shakealertla.R;
-import com.app.shakealertla.ShakeAlertLA;
 import com.app.shakealertla.UserInterface.Activities.AboutSLAActivity;
 import com.app.shakealertla.UserInterface.Activities.HomeActivity;
 import com.app.shakealertla.UserInterface.Activities.PlanActivity;
 import com.app.shakealertla.UserInterface.Activities.RecentEarthquakesActivity;
 import com.app.shakealertla.UserInterface.Activities.WebViewActivity;
-
-import java.util.Locale;
 
 public class HomeFragment extends BaseFragment implements View.OnClickListener{
 

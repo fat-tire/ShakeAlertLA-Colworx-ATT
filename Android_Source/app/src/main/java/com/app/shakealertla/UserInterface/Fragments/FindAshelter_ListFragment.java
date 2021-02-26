@@ -2,12 +2,10 @@ package com.app.shakealertla.UserInterface.Fragments;
 
 
 import android.content.Context;
-import android.location.Address;
-import android.location.Geocoder;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.ViewPager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,13 +21,10 @@ import com.app.shakealertla.Services.ShelterService;
 import com.app.shakealertla.UserInterface.Activities.FindAshelterActivity;
 import com.app.shakealertla.Utils.AppUtils;
 import com.app.shakealertla.Utils.NestedListView;
-import com.google.android.gms.maps.model.LatLng;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 public class FindAshelter_ListFragment extends BaseFragment {

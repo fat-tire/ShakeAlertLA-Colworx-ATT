@@ -5,10 +5,10 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.PopupMenu;
-import android.util.Log;
+import androidx.annotation.NonNull;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.widget.PopupMenu;
+
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,37 +18,22 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.android.volley.error.VolleyError;
-import com.app.shakealertla.HttpUtils.RestAPI;
 import com.app.shakealertla.Listener.ServiceListener;
 import com.app.shakealertla.Models.RecentEarthquakes;
 import com.app.shakealertla.R;
 import com.app.shakealertla.UserInterface.Activities.EarthquakeDetailsActivity;
 import com.app.shakealertla.UserInterface.Activities.RecentEarthquakesActivity;
 import com.app.shakealertla.Utils.AnimUtils;
-import com.app.shakealertla.Utils.AppLog;
 import com.app.shakealertla.Utils.AppUtils;
-import com.app.shakealertla.Utils.ConfigConstants;
-import com.app.shakealertla.Utils.Sort;
 import com.app.shakealertla.Utils.SortRecentEarthquakeAPI;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.Calendar;
 import java.util.TimeZone;
-import java.util.concurrent.TimeUnit;
 
 public class RecentEarthquakes_ListFragmentAPI extends BaseFragment implements PopupMenu.OnMenuItemClickListener {
 

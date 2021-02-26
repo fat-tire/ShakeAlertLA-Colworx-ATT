@@ -1,7 +1,7 @@
 package com.app.shakealertla.Listener;
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 /**
  * Colworx : Global interface Listener for Navigation from one to screen to another in Activities and Fragments

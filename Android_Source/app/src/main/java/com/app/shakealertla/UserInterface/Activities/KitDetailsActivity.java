@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.text.Html;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,9 +19,6 @@ import android.widget.TextView;
 import com.app.shakealertla.Models.Plan;
 import com.app.shakealertla.R;
 import com.app.shakealertla.Services.KitService;
-import com.app.shakealertla.Utils.AppUtils;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 

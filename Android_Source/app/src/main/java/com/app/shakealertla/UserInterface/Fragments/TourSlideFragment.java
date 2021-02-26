@@ -1,21 +1,14 @@
 package com.app.shakealertla.UserInterface.Fragments;
 
-import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.app.shakealertla.R;
-import com.app.shakealertla.ShakeAlertLA;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.transition.Transition;
 
 public class TourSlideFragment extends BaseFragment {
     private static final String ARG_PARAM1 = "param1";

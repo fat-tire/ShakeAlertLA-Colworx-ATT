@@ -7,28 +7,22 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import com.amazonaws.mobile.client.AWSMobileClient;
-import com.amazonaws.mobile.client.AWSStartupHandler;
-import com.amazonaws.mobile.client.AWSStartupResult;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 import com.app.shakealertla.Listener.NavigationRequestListener;
-import com.app.shakealertla.Listener.ServiceListener;
 import com.app.shakealertla.Models.Earthquakes;
 import com.app.shakealertla.R;
 import com.app.shakealertla.Services.MyFirebaseMessagingService;
-import com.app.shakealertla.Services.RecentEarthquakeService;
-import com.app.shakealertla.Utils.AppLog;
 import com.app.shakealertla.Utils.ContextWrapper;
 import com.app.shakealertla.Utils.FragmentUtils;
-import com.app.shakealertla.Utils.GsonUtils;
 import com.app.shakealertla.Utils.SharedPreferenceManager;
 
 import java.util.Locale;
