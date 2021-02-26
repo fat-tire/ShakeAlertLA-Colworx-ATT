@@ -1,11 +1,11 @@
-# LAEEW_Android
+# LAEEW_Android (updates from Fat-tire)
 
 #### version 1.0 build 1.4
 ## Deployment Environment
 
-Android Studio 3.2 <br />
-Targeted OS : 27 <br />
-Windows 10 <br />
+Android Studio Arctic Fox | 2020.3.1 Canary 8 <br />
+Targeted OS : 30 <br />
+Linux 5.8.0-44-generic <br />
 
 ### Github version
 Git version 2.16.3.windows.1

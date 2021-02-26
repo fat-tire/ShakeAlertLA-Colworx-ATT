@@ -1,3 +1,28 @@
+# Mods from fat-tire (2/26/21)
+
+* Updated to SDK 30 (Android 11)
+* Switched to androidx jetpack libraries
+* Upgraded other libraries where possible/not breaking stuff
+* Update to gradle 6.8.3 & set a few properties
+* Use mavencentral instead of jcenter() -- volleyplus still on jcenter only.
+
+This build still requires valid:
+
+* google-services.json (and see res/values/google_maps_api.xml for getting maps to work)
+* awsconfiguration.json
+* Keystore folder contains keys.txt w/ credentials
+* certs in /res/raw/??
+
+These files are available via google (ie, firebase), aws, and the USGS (if you sign up for their ShakeAlert message feed).  See the instructions below for details.
+
+To make the build finish even though these files are missing, I excised/changed/commented out a few sections in a separate branch in my github repository called [fattire-buildable](https://github.com/fat-tire/ShakeAlertLA-Colworx-ATT/tree/fattire-buildable) that builds 'out of the box'.  The missing lines obviously remove useful functionality (no maps, no actual earthquake warning, etc), but you can verify that the app builds and runs- although it doesn't do much.
+
+Be sure to check the background service execution limits introduced in new versions of Android.  [WorkManagers are recommended in Android 12](https://developer.android.com/about/versions/12/foreground-services).
+
+Enjoy!
+
+    -- fat-tire  (2/26/21)
+
 # ShakeAlertLA
 _ShakeAlertLA has been archived. You are free to fork and modify the code for your own use, but development on the open source repository has stopped and issues and pull requests will not be accepted._
 
